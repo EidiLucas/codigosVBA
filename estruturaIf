@@ -1,0 +1,18 @@
+Sub Exercicio()
+'Comparação de 2 números
+
+Dim primeiro As Integer
+Dim segundo As Integer
+
+primeiro = InputBox("Digite o primeiro número: ")
+segundo = InputBox("Digite o segundo número: ")
+
+If primeiro > segundo Then
+  MsgBox "O primeiro valor é maior do que o segundo valor", vbInformation
+ElseIf primeiro = segundo Then
+  MsgBox "O primeiro valor é igual ao segundo valor", vbInformation
+Else
+  MsgBox "O primeiro valor é menor do que o segundo valor", vbInformation
+End If
+    
+End Sub
