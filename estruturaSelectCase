@@ -1,0 +1,32 @@
+Sub ExercicioSelectCase()
+'loop de identificação de intervalos do número informado utilizando select case
+
+Dim numero As Integer
+Dim sair As Integer
+
+While sair <> 6        ' o valor 6 corresponde ao botão Yes da MsgBox
+
+    numero = InputBox("Digite um número: ")
+    
+    Select Case numero
+    Case 11 To 99
+        MsgBox "Número entre 10 e 100 ", vbInformation
+    Case 10
+        MsgBox "Número igual a 10 ", vbInformation
+    Case 101 To 999
+        MsgBox "Número entre 100 e 1000 ", vbInformation
+    Case 100
+        MsgBox "Número igual a 100 ", vbInformation
+    Case 1000
+        MsgBox "Número igual a 1000 ", vbInformation
+    Case Is > 1000
+        MsgBox "Número maior que 1000 ", vbInformation
+    Case Else
+        MsgBox "Número menor que 10"
+    End Select
+    
+sair = MsgBox("Deseja sair? ", vbYesNo)
+
+Wend
+
+End Sub
