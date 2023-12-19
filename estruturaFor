@@ -1,0 +1,16 @@
+Sub ex_for_3()
+'Soma até o número desejado
+
+Dim contador As Integer
+Dim final As Integer
+Dim resultado As Integer
+      
+final = InputBox("Informe o número de repetições para realizar a soma")
+        
+For contador = 1 To final
+  resultado = resultado + contador      
+Next contador
+
+MsgBox " Resultado da soma é: " & resultado
+    
+End Sub
