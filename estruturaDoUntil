@@ -1,0 +1,20 @@
+Sub estruturaDoUntil()
+'Estrutura de repetição do Until com somatória
+
+Dim contador As Integer
+Dim resultado As Integer
+Dim final As Integer
+    
+resultado = 0
+contador = 0
+
+final = InputBox("Insira um valor limite: ")
+    
+Do Until contador > final      'repete enquanto a condição for falsa
+    resultado = resultado + contador
+    contador = contador + 1
+Loop
+
+MsgBox "Número é: " & resultado
+
+End Sub
