@@ -1,0 +1,17 @@
+Sub estruturaWhile()
+'Estrutura de repetição while com somatória
+
+Dim contador As Integer
+Dim resultado As Integer
+
+contador = 1
+resultado = 0
+    
+Do While contador <= 10
+    resultado = resultado + contador
+    contador = contador + 1
+Loop
+  
+MsgBox "Número é: " & resultado
+
+End Sub
