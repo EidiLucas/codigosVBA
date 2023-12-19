@@ -1,0 +1,28 @@
+Sub Exercicio()
+'loop de comparação de 2 números
+
+Dim primeiro As Integer
+Dim segundo As Integer
+Dim sair As Integer
+
+sair = 1
+
+While sair <> 6      'valor 6 corresponde ao botão sim da MsgBox
+
+    primeiro = InputBox("Digite o primeiro número: ")
+    segundo = InputBox("Digite o segundo número: ")
+    
+    If primeiro > segundo Then
+        MsgBox "O primeiro valor é maior do que o segundo valor", vbInformation
+    ElseIf primeiro = segundo Then
+        MsgBox "O primeiro valor é igual ao segundo valor", vbInformation
+    Else
+        MsgBox "O primeiro valor é menor do que o segundo valor", vbInformation
+    End If
+    
+    
+sair = MsgBox("Deseja sair? ", vbYesNo)
+
+Wend
+
+End Sub
